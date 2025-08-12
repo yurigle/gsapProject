@@ -2,12 +2,57 @@
 <html>
 <head>
 <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KIRINJI Korean fans</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+<link href="./css/main.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+<script src="./js/main.js"></script>
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'tkd6fom',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
 </head>
 <body>
-    <div>
-        안녕하세요.
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <header>
+                <div class="flex flex-row gap-2">
+                    <div class="flex justify-center text-center">Messages from Korean fans 2025</div>
+                </div>
+            </header>
+            <h1 class="text-3xl text-clifford">
+                안녕하세요.こんばんは。
+            </h1>
+            <h1 class="text-3xl font-bold">
+                안녕하세요.こんばんは。
+            </h1>
+
+            <div class="grid grid-rows-1 gap-3" data-speed="clamp(0.5)">
+                <div class="grid basis-full h-svh bg-yellow-300">
+                    test
+                </div>
+                <div class="grid basis-full h-svh bg-emerald-300">
+                    test2
+                </div>
+                <div class="grid basis-full h-svh bg-purple-300">
+                    test3
+                </div>
+                <div class="grid basis-full h-svh bg-blue-300">
+                    test4
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
