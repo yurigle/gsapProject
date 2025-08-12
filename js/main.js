@@ -1,6 +1,8 @@
+document.addEventListener("DOMContentLoaded", (event) => {
 
-gsap.registerPlugin(ScrollSmoother);
-ScrollSmoother.create({
-    smooth: 1,
-    effects: true,
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+    ScrollSmoother.create({
+        smooth: 1,
+        effects: true,
+    });
 });
